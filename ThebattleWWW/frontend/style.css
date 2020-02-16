@@ -180,3 +180,10 @@ li strong{
     padding-bottom: 300px;
 }
 /* ====================================================== */
+
+.error {
+    color: red;
+}
+.succes {
+    color: green;
+}

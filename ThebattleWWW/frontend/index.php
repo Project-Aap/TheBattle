@@ -22,7 +22,7 @@
           <a href="#">TheBattle</a>
           <a href="#">Contact </a>
           <!-- if you want to add forms for the login system i would put it in here -->
-
+          <a href="login.php">Login</a>
           <!-- =========================================================== -->
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
