@@ -1,7 +1,7 @@
 <?php
     class Dbh {
         private $host = "localhost";
-        private $dbname = "admin-articles";
+        private $dbname = "adminArticles";
         private $uid = "root";
         private $pwd = "";
 
