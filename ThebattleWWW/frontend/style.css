@@ -50,7 +50,6 @@ li{
 
 /* =========== The navigation section =================== */
 .w-header{
-    background-color: #03367D;
     display: flex;
     justify-content: space-between;
 }
@@ -104,7 +103,6 @@ nav{
     fill: whitesmoke;
 }
 nav .fa{
-    color: #03367D;
     background-color: #29DC5E;
     padding: 0px 5.7px;
 }
@@ -161,7 +159,6 @@ li strong{
 .curio-content{
     width: 391,8px;
     height: 301px;
-    background-color: #03367D;
     text-align: left;
     color: #29DC5E;
 
@@ -185,7 +182,6 @@ li strong{
 .wrapper{
     width: 100%;
     margin: 0 auto;
-    background-color: #03367D;
 }
 .wrapper-main{
     width: 100%;
