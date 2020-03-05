@@ -62,6 +62,7 @@ li{
   /* Hide the links inside the navigation menu (except for logo/home) */
   .topnav #myLinks {
     display: none;
+    width: 300px;
   }
   
   /* Style navigation menu links */
