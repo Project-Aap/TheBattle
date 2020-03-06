@@ -76,16 +76,13 @@
         <!-- ================= start slideshow============= -->
                                 <div class="content-width">
                                     <h2>Actueel Nieuws</h2> 
-                                </div>
-                                 
-        <div class="wrapper flex-between">
-                        
-                    <div class="content-width flex-between">
-              
+                                </div>                                 
+        <div class="wrapper flex-between">                        
+                    <div class="content-width flex-between">              
                     <div class="slider-area ">
                           <div class="slide">
                             <div class="flex-article">
-                                <img src="img/900x350.png" alt="placeholderimg" class="img-responsive">
+                                <img src="img/entrance.jpg" alt="placeholderimg" class="img-fluid">
                                 <article>                                    
                                     <h3>This is a article</h3>
                                     <p>Did you know i fucking hate javascript? lorem ipsum dolor sit amet 
@@ -94,7 +91,6 @@
                                         animi velit sed obcaecati asperiores voluptatum et fugiat ut.
                                     </p>
                                 </article>
-
                             </div>    
                           </div>
                           <div class="slide"><p>2</p></div>
@@ -102,6 +98,23 @@
                           <!--- these are the 3 dummy articles-->
                     </div>
                     </div>
+        </div>
+
+        <div class="wrapper darkblue-bc ">
+        <div class=" yellow content-width">
+                    <p>Stem hier of je het eens of oneens bent met de stelling
+                    </p>
+                    <div class="location-left grid2">
+                    <a class="navigate-route" href="votegreen.html">Ja ik stem
+                    <div class="bottom white votecolor"><p> <span>ik ben het ermee eens</span></p></div>
+                    </a>    
+                    <a class="navigate-route" href="votegreen.html">Ja ik stem
+                    <div class="bottom white votecolor"><p>ik ben het er niet mee eens</p></div>
+                    </a>                          
+                    </div> 
+                    
+                </div>
+            </div>
         </div>
     </main>
     <?php
