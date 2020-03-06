@@ -1,11 +1,81 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Fellix;
 }
-@font-face{
-    src: url('font/Fellix.woff2');
-    font-family: Fellix;
+@font-face {
+    font-family: 'Fellix';
+    src: url('FellixTRIAL-Medium.eot');
+    src: url('FellixTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+         url('FellixTRIAL-Medium.svg#FellixTRIAL-Medium') format('svg'),
+         url('FellixTRIAL-Medium.ttf') format('truetype'),
+         url('FellixTRIAL-Medium.woff') format('woff'),
+         url('FellixTRIAL-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html {
+    font-family: 'Fellix';
+  }
+.w-header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 666;
+    position: absolute;
+}
+.topnav {
+    overflow: hidden;
+    background: #333;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    width: 250px;
+  }
+  
+  /* Style navigation menu links */
+  #navActive {
+    margin-left: -20px;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    color: white;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+
+nav{
+   display: flex; 
+   vertical-align: middle;
+   
+}
+
+.logo svg{
+    fill: whitesmoke;
+
+    
+}
+nav .fa{
+    background-color: #29DC5E;
+    padding: 0px 5.7px;
 }
 /* ============================================== */
 /*  THE HELPER CLASSES */
@@ -163,7 +233,6 @@ ul{
 .fa{
     font-size: 85px;
     color: #FFCC01;
-    margin-top: 138px;
 }
 .fa-arrow-left{
     margin-left: 130px;
@@ -250,4 +319,46 @@ h2{
 }
 }
 @media only screen and (max-width: 400px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* ==================================================== */
+
+/* ====the basic tags and their stylings (h1,h2,p,a)===== */
+a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #29DC5E;
+}
+h1{
+    font-size: 50px;
+    color: #29DC5E;
+    text-align: left;
+}
+h2{
+    font-size: 42px;
+    color: #29DC5E;
+    text-align: left;
+}
+h1 span{
+    font-weight: bold;
+}
+p{
+    color: black;
+    text-align: left;
+}
+ul{
+    list-style-type: square;
+}
+li{
+    padding-top: 8px;
 }

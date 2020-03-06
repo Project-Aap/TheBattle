@@ -20,6 +20,7 @@
 <body>
     <?php
     // Require the header
+    require('header.php');
     ?>
     <main>
         <div class="wrapper darkblue-bc">
