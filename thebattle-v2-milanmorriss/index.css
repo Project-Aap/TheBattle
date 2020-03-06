@@ -17,6 +17,64 @@
   html {
     font-family: 'Fellix';
   }
+.w-header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 666;
+    position: relative;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    width: 250px;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+
+nav{
+   display: flex; 
+   vertical-align: middle;
+   
+}
+
+.logo svg{
+    fill: whitesmoke;
+
+    
+}
+nav .fa{
+    background-color: #29DC5E;
+    padding: 0px 5.7px;
+}
 /* ============================================== */
 /*  THE HELPER CLASSES */
 /* ============================================== */
@@ -42,6 +100,7 @@
 .grid-carousel{
     display: grid;
     grid-template-columns: 1fr 70% 1fr;
+
 }
 .flex-center{
     display: flex;
@@ -58,9 +117,20 @@
 .flex{
     display: flex;
 }
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+}
 .flex-article{
     display: flex;
     justify-content: space-between;
+}
+.votecolor p{
+    color: red;
+}
+.votecolor span{
+    color: green;
 }
 /* Helper classes backgrounds */
 .darkblue-bc{
