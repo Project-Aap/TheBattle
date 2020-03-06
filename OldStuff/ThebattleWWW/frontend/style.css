@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fellix;
+}
+/* ======the custom fonts================================ */
+@font-face {
+    font-family: 'Fellix';
+    src: url('FellixTRIAL-Medium.eot');
+    src: url('FellixTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+         url('FellixTRIAL-Medium.svg#FellixTRIAL-Medium') format('svg'),
+         url('FellixTRIAL-Medium.ttf') format('truetype'),
+         url('FellixTRIAL-Medium.woff') format('woff'),
+         url('FellixTRIAL-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* ==================================================== */
+
+/* ====the basic tags and their stylings (h1,h2,p,a)===== */
+a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #29DC5E;
+}
+h1{
+    font-size: 50px;
+    color: #29DC5E;
+    text-align: left;
+}
+h2{
+    font-size: 42px;
+    color: #29DC5E;
+    text-align: left;
+}
+h1 span{
+    font-weight: bold;
+}
+p{
+    color: black;
+    text-align: left;
+}
+ul{
+    list-style-type: square;
+}
+li{
+    padding-top: 8px;
+}
+/* ====================================================== */
+
+/* =========== The navigation section =================== */
+.w-header{
+    display: flex;
+    justify-content: space-between;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    width: 300px;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+nav{
+   display: flex; 
+   vertical-align: middle;
+   
+}
+
+.logo svg{
+    fill: whitesmoke;
+}
+nav .fa{
+    background-color: #29DC5E;
+    padding: 0px 5.7px;
+}
+/* ================start of the main-body================ */
+li strong{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.ul , li{
+    display: flex;
+    justify-content: space-between;
+    color: #29DC5E;
+}
+/* ====================================================== */
+
+/* ============== start of w-main======================== */
+.w-main{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.heading{
+    padding: 100px 0px;
+}
+.hero-img img{
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    margin-top: -250px;
+}
+.content-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.info-content-map{
+    display: flex;
+}
+.info-content-content{
+    width: 400px;
+}
+.info-content-map h4{
+    text-align: center;
+    font-size: 30px;
+    color: #29DC5E;
+}
+.info-content-map p{
+    font-size: 20px;
+}
+.location{
+    padding-left: 20px;
+}
+/* ============start of w-main 2nd==================== */
+.curio-content{
+    width: 391,8px;
+    height: 301px;
+    text-align: left;
+    color: #29DC5E;
+
+}
+.curio-content h3{
+    font-size: 40px;
+    margin: 30px;
+}
+.curio-content p{
+        font-size:20px;
+        margin: 30px;
+        padding-top: 20px;
+        color: #29DC5E;
+}
+.w-bottom{
+    margin: 0 auto;
+    width: 60%;
+}
+/* ====================================================== */
+/* ====================HELPER classes==================== */
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper-main{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+.w-body{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    padding-bottom: 400px;
+}
+.flex{
+    display: flex;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+/* ====================================================== */
+
+.error {
+    color: red;
+}
+.succes {
+    color: green;
+}

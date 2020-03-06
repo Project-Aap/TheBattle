@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Fellix;
+}
+@font-face{
+    src: url('font/Fellix.woff2');
+    font-family: Fellix;
+}
+/* ============================================== */
+/*  THE HELPER CLASSES */
+/* ============================================== */
+.wrapper{
+    width: 100%;
+}
+.padding-top-bottom{
+    padding: 160px 0px;
+}
+.margin20{
+    margin: 20px;
+}
+.content-width{
+    width: 70%;
+    margin: 0 auto;
+}
+.content-width-nomargin{
+    width: 70%;
+}
+.dib{
+    display: inline-block;
+}
+.grid-carousel{
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+.flex{
+    display: flex;
+}
+.flex-article{
+    display: flex;
+    justify-content: space-between;
+}
+/* Helper classes backgrounds */
+.darkblue-bc{
+    background-color: #04367D;
+}
+/* Helper classes colors */
+.yellow{
+    color: #FFCC01;
+}
+.block-2-content h2{
+
+}
+.white{
+    color: #FFF;
+}
+/* helper classes single tags */
+h2{
+    text-align: left;
+    font-size: 100px;
+}
+p{
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    text-align: left;
+}
+li{
+    list-style-type: none;
+    color: white;
+    padding: 5px 0px;
+}
+li strong{
+    color: #FFCC01;
+}
+ul{
+    margin: 20px;
+}
+/* ================================================ */
+/* ============================================== */
+/*  START OF BLOCKS */
+/* ============================================== */
+/* block-2 */
+.mapouter{
+    width: 450px;
+    height: 450px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+}
+.location-left a{
+    margin-top: 160px;
+    display: inline-block;
+    padding: 10px 220px 100px 10px;
+    background-color: #FFCC01;
+    transition: 0.2s;
+}
+/* navigate-route transition*/
+.navigate-route:hover{
+    margin-top: 110px;
+    padding: 10px 220px 150px 10px;
+}
+.bottom{
+    margin-top: 10px;
+}
+/* ======= */
+/* Block-2 */
+.block-2-content{
+    width: 600px;
+    height: 400px;
+}
+.block-2 img{
+    margin-top: 80px;
+}
+/* ======= */
+
+/* ====== JAVASCRIPT CAROUSEL STYLING */
+.slider-area{
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.slide{
+    display: inline-block;
+    flex: 1;
+    overflow: hidden;
+    height: 350px;
+    border: 4px dashed #FFCC01;
+}
+.slide p{
+    text-align: center;
+    font-size: 85px;
+}
+.fa{
+    font-size: 85px;
+    color: #FFCC01;
+    margin-top: 138px;
+}
+.fa-arrow-left{
+    margin-left: 130px;
+}
+.fa-arrow-right{
+    margin-right: 130px;
+}
+.flex-article article h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.flex-article article p{
+    font-size: 20px;
+    text-align-last: left;
+}
+.flex-article article{
+    padding: 20px;
+}
+.carousel-heading{
+    text-align: center;
+}
+.previous , .next{
+    background-color: red;
+}
+/* =================================================== */
+
+/* =================RESPONSIVE ======================= */
+@media only screen and (max-width: 1250px) {
+    .location{
+            display: grid;
+            grid-template-columns: 1fr;
+    }
+    .block-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .fa-arrow-left{
+        margin-left: 10px;
+    }
+    .fa-arrow-right{
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+.block-2-img{
+    width: 200px;
+    text-align: center;
+}
+.img-responsive{
+    display: none;
+}
+.margin20{
+    margin: 0px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+}
+.mapouter{
+    width: 320px;
+    height: 320px;
+}
+.content-width{
+    width: 100%;
+}
+.darkblue-bc{
+    width: 100%;
+}
+.navigate-route{
+    width: 100%;
+}
+.content-width-nomargin{
+    width: 100%;
+}
+.mapouter{
+    display: none;
+}
+}
+@media only screen and (max-width: 400px) {
+}
