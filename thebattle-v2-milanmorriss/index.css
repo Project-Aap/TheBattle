@@ -32,6 +32,7 @@
 .grid-carousel{
     display: grid;
     grid-template-columns: 1fr 70% 1fr;
+
 }
 .flex-center{
     display: flex;
@@ -48,9 +49,20 @@
 .flex{
     display: flex;
 }
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+}
 .flex-article{
     display: flex;
     justify-content: space-between;
+}
+.votecolor p{
+    color: red;
+}
+.votecolor span{
+    color: green;
 }
 /* Helper classes backgrounds */
 .darkblue-bc{
