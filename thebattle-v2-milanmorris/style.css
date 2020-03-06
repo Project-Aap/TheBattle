@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Fellix;
+}
+@font-face{
+    src: url('font/Fellix.woff2');
+    font-family: Fellix;
+}
+/* ============================================== */
+/*  THE HELPER CLASSES */
+/* ============================================== */
+.wrapper{
+    width: 100%;
+}
+.padding-top-bottom{
+    padding: 160px 0px;
+}
+.content-width{
+    width: 70%;
+    margin: 0 auto;
+}
+.content-width-nomargin{
+    width: 70%;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+.flex{
+    display: flex;
+}
+/* Helper classes backgrounds */
+.darkblue-bc{
+    background-color: #04367D;
+}
+/* Helper classes colors */
+.yellow{
+    color: #FFCC01;
+}
+.white{
+    color: #FFF;
+}
+/* helper classes single tags */
+h2{
+    text-align: left;
+    font-size: 100px;
+}
+p{
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    text-align: left;
+}
+li{
+    list-style-type: none;
+    color: white;
+    padding: 5px 0px;
+}
+li strong{
+    color: #FFCC01;
+}
+/* ================================================ */
+/* ============================================== */
+/*  START OF BLOCKS */
+/* ============================================== */
+/* block-2 */
+.location{
+    display: flex;
+    justify-content: space-between;
+}
+.location-left a{
+    margin-top: 160px;
+    display: inline-block;
+    padding: 10px 220px 100px 10px;
+    background-color: #FFCC01;
+    transition: 0.2s;
+}
+/* navigate-route transition*/
+.navigate-route:hover{
+    margin-top: 110px;
+    padding: 10px 220px 150px 10px;
+}
+.bottom{
+    margin-top: 10px;
+}
+/* ======= */
+/* Block-2 */
+.block-2-content{
+    width: 600px;
+    height: 400px;
+}
+.block-2 img{
+    margin-top: 80px;
+}
+/* ======= */
