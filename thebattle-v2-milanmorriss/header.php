@@ -23,10 +23,9 @@
       </div>
       <nav>
         <div class="topnav">
-          <a href="#home" class="active">Logo</a>
+          <a href="#" id="navActive" class="active">MBO</a>
           <!-- Navigation links (hidden by default) -->
           <div id="myLinks">
-            <a href="#">Mbo </a>
             <a href="#">TheBattle</a>
             <a href="#">Contact </a>
             <!-- if you want to add forms for the login system i would put it in here -->
@@ -49,10 +48,14 @@
         <script>
           function myFunction() {
             var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
+            var y = document.getElementById("navActive");
+            if (x.style.display === "flex") {
               x.style.display = "none";
+              y.style["margin"] = "-20px";
             } else {
-              x.style.display = "block";
+              x.style.display = "flex";
+              x.style["flex-direction"] = "column";
+              y.style["margin-left"] = "0px";
             }
           } 
         </script>

@@ -21,11 +21,11 @@
     display: flex;
     justify-content: space-between;
     z-index: 666;
-    position: relative;
+    position: absolute;
 }
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background: #333;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -35,16 +35,18 @@
   }
   
   /* Style navigation menu links */
-  .topnav a {
+  #navActive {
+    margin-left: -20px;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
     color: white;
     padding: 25px 25px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
+
     background: black;
     display: block;
     position: absolute;
@@ -231,7 +233,6 @@ ul{
 .fa{
     font-size: 85px;
     color: #FFCC01;
-    margin-top: 138px;
 }
 .fa-arrow-left{
     margin-left: 130px;
@@ -360,75 +361,4 @@ ul{
 }
 li{
     padding-top: 8px;
-}
-/* ====================================================== */
-
-/* =========== The navigation section =================== */
-.w-header{
-    display: flex;
-    justify-content: space-between;
-}
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-    width: 250px;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 25px 25px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-
-nav{
-   display: flex; 
-   vertical-align: middle;
-   
-}
-
-.logo svg{
-    fill: whitesmoke;
-    z-index: 666;
-    position: relative;
-    overflow: hidden;
-}
-nav .fa{
-    background-color: #29DC5E;
-    padding: 0px 5.7px;
-}
-/* ================start of the main-body================ */
-li strong{
-    padding-bottom: 10px;
-    font-size: 30px;
-}
-.ul , li{
-    display: flex;
-    justify-content: space-between;
-    color: #29DC5E;
 }
