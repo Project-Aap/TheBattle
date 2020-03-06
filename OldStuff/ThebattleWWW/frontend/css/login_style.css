@@ -1,0 +1,55 @@
+.logout {
+    display: inline;
+    padding-left: 20px;
+}
+
+.logout input {
+    border: none;
+    background: none;
+    color: #29DC5F;
+    font-size: 2.5rem;
+}
+
+.login {
+    background: #03367D;
+}
+
+.login-text {
+    text-align: center;
+    color: #29DC5F;
+}
+
+.login-input {
+    padding: 5px 20px 5px 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-submit {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-reverse {
+    flex-direction: column;
+}
+
+.error {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.succes {
+    margin-top: 10px;
+    text-align: center;
+}
