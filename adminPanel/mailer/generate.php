@@ -1,5 +1,5 @@
 <?php
-
+    require "../../phpHandlers/dbConfig.php";
     session_start();
     require "vendor/autoload.php";
     if(!(isset($_POST["id"]) and isset($_POST["mailSubject"]) and isset($_POST["mailSend"]) and isset($_POST["mailContent"]) and isset($_POST["gmailUser"]) and isset($_POST["gmailPassword"])))
@@ -27,8 +27,31 @@
     $mail->setFrom('no-reply@thebattle.com', 'TheBattle');
     $mail->Subject = $_POST["mailSubject"];
     $mail->Body = $_POST["mailContent"];
-    $mail->addAddress($_POST["mailSend"]);
-    $id = $_POST["id"];
+
+    $sql = "SELECT * FROM user_information";
+    $query = $dbConn->prepare($sql);
+    $queryCheck = $query->execute();
+    $queryOutput = $query->fetchAll(PDO::FETCH_ASSOC);
+
+    if($queryOutput)
+    {
+        if ($queryOutput[0]["mail"] != NULL && $queryOutput[0]["id"] != NULL) {
+            $mail->addAddress($queryOutput[0]["mail"]);
+            $id = $queryOutput[0]["id"];
+        }
+        else
+        {
+            $_SESSION["error"] = "De email(s) zijn niet verzonden door een fout!";
+            header("Location: " . "sendMails.php");
+            exit;
+        }
+    }
+    else
+    {
+        $_SESSION["error"] = "De email(s) zijn niet verzonden door een fout!";
+        header("Location: " . "sendMails.php");
+        exit;
+    }
 
     if(isset($_POST["addBarcode"]))
     {

@@ -74,62 +74,9 @@ nav{
     
 }
 nav .fa{
-    background-color: #FFCC01;
+    background-color: #29DC5E;
     padding: 0px 5.7px;
 }
-footer{
- 	background: #02377D;
- 	width:100%;
- }
-
-footer .contact-form h2{
-	font-size:60px;
-}
-
-footer .contact-form h3{
-	font-size:40px;
-}
-
- .container{
- 	margin:0 auto;
- 	width:95%;
- 	color:#FFCC01;
- }
-
- .contact-links{
- 	display:flex;
- 	flex-direction: row;
- 	justify-content: space-between;
- }
-
- .social-media img{
-		padding:0px 20px 0px 0px;
- }
-
-
-
- /*Conteeeeeeeeeeeeeeeeeeeent*/
-
- .contact-form{
- 	display:flex;
- 	justify-content: space-between;
- 	align-items: center;
- 	border-bottom:1px #FFCC01 solid;
- }
-
- .contact-links{
- 	font-size:20px;
- }
-
- /* Helper classesssssssssssssssssssss  */
-
- .color1{
- 	color:#FFCC01;
- }
-
- .color2{
- 	background: #02377D;
- }
 /* ============================================== */
 /*  THE HELPER CLASSES */
 /* ============================================== */

@@ -133,7 +133,6 @@
                                             //  with autoplayspeed we can change the scrollspeed of divs
                                             });                                       
                                     </script>
-<?= require("footer.php");?>
 </body>
 
 </html>
