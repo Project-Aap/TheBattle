@@ -1,7 +1,7 @@
 <?php
     require "header.php";
 ?>
-    <main>
+    <main class="login-main">
         <?php
             if (isset($_SESSION["idUsers"])) {
                 echo '<form action="login/includes/logout.inc.php" method="POST">';

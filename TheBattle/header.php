@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="index.css">
   <title>Curio.nl | TheBattle</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/login_style.css">
+  <link rel="stylesheet" href="login/styles/main.css">
     <script src="https://kit.fontawesome.com/fd9dd58e6a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
