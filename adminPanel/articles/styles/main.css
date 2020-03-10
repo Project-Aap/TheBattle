@@ -1,0 +1,51 @@
+@font-face {
+	src: url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.woff2") format("woff2");
+	font-family: "roboto";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*=========================[Elements]=========================*/
+
+body {
+	font-family: "roboto";
+}
+
+/*=========================[Ids]=========================*/
+
+/*=========================[Classes]=========================*/
+
+.image-preview {
+	border: 2px solid #ccc;
+	font-size: 1.5rem;
+	font-weight: bold;
+	min-height: 200px;
+	color: #ccc;
+	width: 100%;
+}
+
+.image-preview-image {
+	display: none;
+	width: 100%;
+}
+
+/*=========================[Helper Classes]=========================*/
+
+.flex {
+	display: flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
