@@ -88,10 +88,10 @@
             <div class="content-width flex-between">              
                 <div class="slider-area ">
                             <?php
-                                foreach ($articlesView->getArticlesView() as $item) {
+                                foreach ($articlesView->getArticlesTrueView() as $item) {
                                     $file = $item["fileArticles"];
                                     $title = $item["titleArticles"];
-                                    $description = $item["fileArticles"];
+                                    $description = $item["descriptionArticles"];
                                     echo "<div class=\"slide\">";
                                         echo "<div class=\"flex-article\">";
                                             echo "<img class=\"img-responsive\" src=\"adminPanel/articles/uploads/images/$file\" alt=\"placeholderimg\" class=\"img-fluid\" width=\"900\" height=\"350\">";
