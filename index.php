@@ -1,3 +1,9 @@
+<?php
+    require "adminPanel/articles/includes/classAutoloaderHomepage.inc.php";
+    session_start();
+
+    $articlesView = new ArticlesView();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,30 +81,31 @@
             </div>
         </div>
         <!-- ================= start slideshow============= -->
-                                <div class="content-width">
-                                    <h2>Actueel Nieuws</h2> 
-                                </div>                                 
+        <div class="content-width">
+            <h2>Actueel Nieuws</h2> 
+        </div>                                 
         <div class="wrapper flex-between">                        
-                    <div class="content-width flex-between">              
-                    <div class="slider-area ">
-                          <div class="slide">
-                            <div class="flex-article">
-                                <img src="img/entrance.jpg" alt="placeholderimg" class="img-fluid">
-                                <article>                                    
-                                    <h3>This is a article</h3>
-                                    <p>Did you know i fucking hate javascript? lorem ipsum dolor sit amet 
-                                        dolor sit amet Lorem, ipsum dolor 
-                                        sit amet consectetur adipisicing elit. Quos error illo 
-                                        animi velit sed obcaecati asperiores voluptatum et fugiat ut.
-                                    </p>
-                                </article>
-                            </div>    
-                          </div>
-                          <div class="slide"><p>2</p></div>
-                          <div class="slide"><p>3</p></div>
-                          <!--- these are the 3 dummy articles-->
-                    </div>
-                    </div>
+            <div class="content-width flex-between">              
+                <div class="slider-area ">
+                            <?php
+                                foreach ($articlesView->getArticlesView() as $item) {
+                                    $file = $item["fileArticles"];
+                                    $title = $item["titleArticles"];
+                                    $description = $item["fileArticles"];
+                                    echo "<div class=\"slide\">";
+                                        echo "<div class=\"flex-article\">";
+                                            echo "<img class=\"img-responsive\" src=\"adminPanel/articles/uploads/images/$file\" alt=\"placeholderimg\" class=\"img-fluid\" width=\"900\" height=\"350\">";
+                                            echo "<article>";
+                                                echo "<h3>$title</h3>";
+                                                echo "<p>$description</p>";
+                                            echo "</article>";
+                                        echo "</div>";   
+                                    echo "</div>";
+                                }
+                            ?>
+                    <!--- these are the 3 dummy articles-->
+                </div>
+            </div>
         </div>
 
         <div class="wrapper darkblue-bc ">
@@ -122,17 +129,17 @@
     //  Require the footer
     ?>
     <!-- carousel script -->
-                                    <script src="js/slick.js"></script>
-                                    <script>
-                                        $('.slider-area').slick({
-                                            arrows: true,
-                                            autoplay: true,
-                                            autoplaySpeed: 3000,
-                                            nextArrow: $('nextArrow'),
-                                            prevArrow: $('.prevArrow')
-                                            //  with autoplayspeed we can change the scrollspeed of divs
-                                            });                                       
-                                    </script>
+    <script src="js/slick.js"></script>
+    <script>
+        $('.slider-area').slick({
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            nextArrow: $('nextArrow'),
+            prevArrow: $('.prevArrow')
+            //  with autoplayspeed we can change the scrollspeed of divs
+            });                                       
+    </script>
 </body>
 
 </html>
