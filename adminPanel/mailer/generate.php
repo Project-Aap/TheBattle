@@ -1,6 +1,6 @@
 <?php
     require "../../phpHandlers/dbConfig.php";
-    session_start();
+    require "../checkModerator.php";
     require "vendor/autoload.php";
     if(!(isset($_POST["id"]) and isset($_POST["mailSubject"]) and isset($_POST["mailSend"]) and isset($_POST["mailContent"]) and isset($_POST["gmailUser"]) and isset($_POST["gmailPassword"])))
     {
