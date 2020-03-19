@@ -1,4 +1,5 @@
 <?php
+    require "../checkModerator.php";
     require "includes/classAutoloaderPages.inc.php";
     session_start();
 

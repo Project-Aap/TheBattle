@@ -42,6 +42,13 @@
                                     echo "<tr>";
                                         echo "<td>$title</td>";
                                         echo "<td class=\"d-flex\">";
+                                            echo "<form action=\"includes/toggle.inc.php?id=$id\" method=\"POST\">";
+                                            if (!$item["toggleArticles"]) {
+                                                echo "<input class=\"btn btn-success ml-2\" type=\"submit\" name=\"show\" value=\"Show\">";
+                                            } else {
+                                                echo "<input class=\"btn btn-success ml-2\" type=\"submit\" name=\"hide\" value=\"Hide\">";
+                                            }
+                                            echo "</form>";
                                             echo "<a class=\"btn btn-primary ml-2\" href=\"read.php?id=$id\">Read</a>";
                                             echo "<a class=\"btn btn-info ml-2\" href=\"update.php?id=$id\">Edit</a>";
                                             echo "<form action=\"includes/delete.inc.php?id=$id\" method=\"POST\">";
