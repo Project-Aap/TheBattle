@@ -122,7 +122,7 @@
                     <a class="navigate-route" href="votegreen.html">Ja ik stem
                     <div class="bottom white votecolor"><p> <span>ik ben het ermee eens</span></p></div>
                     </a>    
-                    <a class="navigate-route" href="votegreen.html">Ja ik stem
+                    <a class="navigate-route" href="votered.html">Ja ik stem
                     <div class="bottom white votecolor"><p>ik ben het er niet mee eens</p></div>
                     </a>                          
                     </div> 
