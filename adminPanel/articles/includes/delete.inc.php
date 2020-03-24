@@ -6,8 +6,10 @@
     if (isset($_POST["delete"])) {
         $id = $_GET["id"];
 
+        $articlesView = new ArticlesView();
         $articlesController = new ArticlesController();
 
+        unlink("../uploads/images/" . $articlesView->readArticleView($id)[0]["fileArticles"]);
         $articlesController->deleteArticlesController($id);
 
         header("Location: ../index.php?delete=success");

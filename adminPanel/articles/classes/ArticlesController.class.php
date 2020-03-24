@@ -16,8 +16,8 @@
             $this->deleteArticles($deleteId);
         }
 
-        public function updateArticleController($title, $description, $file, $id) {
-            $this->updateArticle($title, $description, $file, $id);
+        public function updateArticleController($title, $description, $file, $toggle, $id) {
+            $this->updateArticle($title, $description, $file, $toggle, $id);
         }
     }
 ?>

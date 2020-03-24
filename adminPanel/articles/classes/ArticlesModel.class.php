@@ -45,10 +45,10 @@
             return $results;
         }
 
-        protected function updateArticle($title, $description, $file, $id) {
-            $sql = "UPDATE articles SET titleArticles = ?, descriptionArticles = ?, fileArticles = ?, toggleArticles = false WHERE idArticles = ?";
+        protected function updateArticle($title, $description, $file, $toggle, $id) {
+            $sql = "UPDATE articles SET titleArticles = ?, descriptionArticles = ?, fileArticles = ?, toggleArticles = ? WHERE idArticles = ?";
             $stmt = $this->connect()->prepare($sql);
-            $stmt->execute([$title, $description, $file, $id]);
+            $stmt->execute([$title, $description, $file, $toggle, $id]);
         }
 
         protected function deleteArticles($id) {
