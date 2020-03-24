@@ -80,6 +80,12 @@
                 </div>
             </div>
         </div>
+        <!-- ================= facebook ============= -->
+        <div class="facebook content-width flex-between">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v6.0"></script>
+            <div class="fb-like" data-href="https://www.facebook.com/Curiodebatteam/" data-width="100" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+        </div>
         <!-- ================= start slideshow============= -->
         <div class="content-width">
             <h2>Actueel Nieuws</h2> 
@@ -116,7 +122,7 @@
                     <a class="navigate-route" href="votegreen.html">Ja ik stem
                     <div class="bottom white votecolor"><p> <span>ik ben het ermee eens</span></p></div>
                     </a>    
-                    <a class="navigate-route" href="votegreen.html">Ja ik stem
+                    <a class="navigate-route" href="votered.html">Ja ik stem
                     <div class="bottom white votecolor"><p>ik ben het er niet mee eens</p></div>
                     </a>                          
                     </div> 

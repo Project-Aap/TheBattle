@@ -25,7 +25,7 @@
 }
 .topnav {
     overflow: hidden;
-    background: #333;
+    background: #FFCC01;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -47,7 +47,7 @@
     font-size: 17px;
     display: block;
 
-    background: black;
+    background: #04367D;
     display: block;
     position: absolute;
     right: 0;
@@ -57,7 +57,7 @@
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: #04367D;
   }
   
   /* Style the active link (or home/logo) */
@@ -74,7 +74,7 @@ nav{
     
 }
 nav .fa{
-    background-color: #29DC5E;
+    background-color: #04367D;
     padding: 0px 5.7px;
 }
 /* ============================================== */
@@ -319,17 +319,15 @@ h2{
 }
 }
 @media only screen and (max-width: 400px) {
+
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    .darkblue-bc{
+        padding-top: 40px;
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
 
   /* ==================================================== */
 
@@ -337,16 +335,16 @@ h2{
 a{
     text-decoration: none;
     font-size: 40px;
-    color: #29DC5E;
+    color: #04367D;;
 }
 h1{
     font-size: 50px;
-    color: #29DC5E;
+    color: #FFCC01;;
     text-align: left;
 }
 h2{
     font-size: 42px;
-    color: #29DC5E;
+    color: #FFCC01;;
     text-align: left;
 }
 h1 span{
