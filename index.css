@@ -278,7 +278,7 @@ ul{
         margin-right: 10px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 755px) {
 .block-2-img{
     width: 200px;
     text-align: center;
@@ -317,14 +317,26 @@ h2{
 .mapouter{
     display: none;
 }
+.location-left a {
+    padding: 0;
 }
-@media only screen and (max-width: 400px) {
+}
+@media only screen and (max-width: 975px) {
 
     .grid2 {
         grid-template-columns: 1fr;
     }
     .darkblue-bc{
         padding-top: 40px;
+    }
+
+    .location-left .vote-stuff {
+        padding: 10px 220px 50px 10px;
+        margin: 0;
+    }
+
+    .darkblue-bc {
+        padding-bottom: 80px;
     }
 
 }
