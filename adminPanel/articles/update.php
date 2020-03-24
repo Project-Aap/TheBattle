@@ -41,13 +41,11 @@
                         <tr>
                             <td>Image</td>
                             <td class="w-100">
-                                <div class="form-group">
+                                <div class="form-group mb-0">
                                     <label for="input-file">Enter a file:</label>
                                     <input id="input-file" class="form-control-file" type="file" name="file">
-                                    <div id="image-preview" class="image-preview p-3 mt-3">
-                                        <img id="image-preview-image" src="uploads/images/<?=$articlesView->readArticleView($id)[0]["fileArticles"]?>" alt="Article Image">
-                                        <span id="image-preview-text"></span>
-                                    </div>
+                                    <img id="image-preview-image" class="mt-3" src="uploads/images/<?=$articlesView->readArticleView($id)[0]["fileArticles"]?>" alt="Article Image">
+                                    <span id="image-preview-text"></span>
                                 </div>
                             </td>
                         </tr>
