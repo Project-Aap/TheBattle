@@ -44,7 +44,7 @@
                                 <div class="form-group">
                                     <label for="input-file">Enter a file:</label>
                                     <input id="input-file" class="form-control-file" type="file" name="file">
-                                    <div id="image-preview" class="image-preview mt-3 d-flex justify-content-center align-items-center">
+                                    <div id="image-preview" class="image-preview p-3 mt-3">
                                         <img id="image-preview-image" src="uploads/images/<?=$articlesView->readArticleView($id)[0]["fileArticles"]?>" alt="Article Image">
                                         <span id="image-preview-text"></span>
                                     </div>
