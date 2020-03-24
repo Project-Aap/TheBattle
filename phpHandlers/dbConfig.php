@@ -10,7 +10,7 @@ if ($_SERVER["HTTP_HOST"] == "localhost") {
     $dbConn = new PDO("mysql:host=$server;dbname=$dbName", $user, $pass);
     $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } else {
-    $server = "localhost";
+    $server = "sql213.epizy.com";
     $user = "epiz_25235384";
     $pass = "EuJCv1EE366U0X";
     $dbName = "epiz_25235384_debattleDB";

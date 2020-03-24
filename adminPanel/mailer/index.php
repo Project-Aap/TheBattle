@@ -21,14 +21,6 @@ require "../checkModerator.php";
             <label for="gmailPassword">Je GMail wachtwoord: </label>
             <input type="password" name="gmailPassword" id="gmailPassword" placeholder="Wachtwoord">
             <p>Aangezien uw GMail bereikbaar moet zijn voor de Php Applicatie, zult u "Toegang door minder veilige apps" <a href="https://myaccount.google.com/lesssecureapps">hier</a> moeten inschakelen als u dat nog niet heeft gedaan.</p>
-            <br>
-            <label for="id">ID (Word uiteindelijk uit database gehaald): </label>
-            <input type="text" name="id" id="id" placeholder="ID">
-            <br>
-            <label for="mailSend">Mail waar het naar gestuurd word (Word uiteindelijk uit database gehaald): </label>
-            <input type="text" name="mailSend" id="mailSend" placeholder="Verzend naar mail">
-            <br>
-            <br>
             <label for="mailSubject">Onderwerp van de mail: </label>
             <input type="text" name="mailSubject" id="mailSubject" placeholder="Onderwerp">
             <br>
