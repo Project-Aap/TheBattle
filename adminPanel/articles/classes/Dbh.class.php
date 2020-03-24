@@ -1,7 +1,7 @@
 <?php
     class Dbh {
         private $host = "sql213.epizy.com";
-        private $dbname = "epiz_25235384_adminArticles";
+        private $dbname = "epiz_25235384_debattleDB";
         private $uid = "epiz_25235384";
         private $pwd = "EuJCv1EE366U0X";
 
