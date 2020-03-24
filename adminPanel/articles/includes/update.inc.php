@@ -34,13 +34,13 @@
             exit;
         } else {
             if (!in_array($fileActualExt, $allowed)) {
-                header("Location: ../index.php?update=invalidFileType");
+                header("Location: ../update.php?id=$id&update=invalidFileType");
                 exit();
             } elseif ($fileError != 0) {
-                header("Location: ../index.php?update=fileError");
+                header("Location: ../update.php?id=$id&update=fileError");
                 exit();
             } elseif ($fileSize > 1000000) {
-                header("Location: ../index.php?update=maxFileSizeReached");
+                header("Location: ../update.php?id=$id&update=maxFileSizeReached");
                 exit();
             } else {
                 unlink("../uploads/images/" . $articlesView->readArticleView($id)[0]["fileArticles"]);

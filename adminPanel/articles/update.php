@@ -8,11 +8,17 @@
             <h1 class="mt-5 mb-5">Edit</h1>
             <?php
                 if (isset($_GET["update"])) {
-                    $upadteCheck = $_GET["update"];
+                    $updateCheck = $_GET["update"];
 
-                    if ($upadteCheck == "emptyFields") {
+                    if ($updateCheck == "emptyFields") {
                         echo "<div class=\"alert alert-danger\">You didn't fill in all fields</div>";
-                    } elseif ($upadteCheck == "success") {
+                    } elseif ($updateCheck == "invalidFileType") {
+                        echo "<div class=\"alert alert-danger\">Invalid file type</div>";
+                    } elseif ($updateCheck == "fileError") {
+                        echo "<div class=\"alert alert-danger\">An error has occurred</div>";
+                    } elseif ($updateCheck == "maxFileSizeReached") {
+                        echo "<div class=\"alert alert-danger\">Max file size reached</div>";
+                    } elseif ($updateCheck == "success") {
                         echo "<div class=\"alert alert-success\">Record was updated</div>";
                     }
                 }

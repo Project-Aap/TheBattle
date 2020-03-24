@@ -23,6 +23,6 @@
         header("Location: ../index.php?hide=success");
         exit;
     } else {
-        header("Location: ../update.php?id=$id");
+        header("Location: ../index.php?id=$id");
     }
 ?>
