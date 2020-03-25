@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="adminstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <form action="" method="POST">
-        <input type="text" name="id" placeholder="Scan your barcode..">
+    <div class="wrapper">
+ <div class="content-width">
+    <h2>Admin Login</h2>
+    <p>Please use the given barcode to proceed...</p>
+    
+    <form action="" method="POST" >
+        <input type="text" name="id" class="align" placeholder="Scan your barcode.....">
         <input type="submit" style="visibility: hidden;" name="submitLogin" value="Login">
     </form>
+    <p>Please note that if you are a visitor and not a moderator you should go back to the homepage</p>
+    <a href="https://www.debattle.rf.gd" class="btn btn-primary">Bring me back!</a>
+    </div>
+
     <?php
     session_start();
     require "../phpHandlers/dbConfig.php";
@@ -36,5 +47,6 @@
         }
     }
     ?>
+        </div>
 </body>
 </html>
