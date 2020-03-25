@@ -1,11 +1,11 @@
 <?php
     require "../../phpHandlers/dbConfig.php";
-    session_start();
+    require "../checkModerator.php";
     require "vendor/autoload.php";
-    if(!(isset($_POST["id"]) and isset($_POST["mailSubject"]) and isset($_POST["mailSend"]) and isset($_POST["mailContent"]) and isset($_POST["gmailUser"]) and isset($_POST["gmailPassword"])))
+    if(!(isset($_POST["mailSubject"]) and isset($_POST["mailContent"]) and isset($_POST["gmailUser"]) and isset($_POST["gmailPassword"])))
     {
         $_SESSION["error"] = "De email(s) zijn niet verzonden door een fout!";
-        header("Location: " . "sendMails.php");
+        header("Location: " . "index.php");
         exit;
     }
 
@@ -42,14 +42,14 @@
         else
         {
             $_SESSION["error"] = "De email(s) zijn niet verzonden door een fout!";
-            header("Location: " . "sendMails.php");
+            header("Location: " . "index.php");
             exit;
         }
     }
     else
     {
         $_SESSION["error"] = "De email(s) zijn niet verzonden door een fout!";
-        header("Location: " . "sendMails.php");
+        header("Location: " . "index.php");
         exit;
     }
 
@@ -67,6 +67,6 @@
     {
         $_SESSION["error"] = "De email(s) zijn niet verzonden door een fout!";
     }
-    header("Location: " . "sendMails.php");
+    header("Location: " . "index.php");
 
 ?>

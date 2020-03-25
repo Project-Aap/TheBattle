@@ -1,9 +1,8 @@
 <?php
+    require "../checkModerator.php";
     require "includes/classAutoloaderPages.inc.php";
-    session_start();
 
     $articlesView = new ArticlesView();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

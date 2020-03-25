@@ -8,11 +8,17 @@
             <h1 class="mt-5 mb-5">Edit</h1>
             <?php
                 if (isset($_GET["update"])) {
-                    $upadteCheck = $_GET["update"];
+                    $updateCheck = $_GET["update"];
 
-                    if ($upadteCheck == "emptyFields") {
+                    if ($updateCheck == "emptyFields") {
                         echo "<div class=\"alert alert-danger\">You didn't fill in all fields</div>";
-                    } elseif ($upadteCheck == "success") {
+                    } elseif ($updateCheck == "invalidFileType") {
+                        echo "<div class=\"alert alert-danger\">Invalid file type</div>";
+                    } elseif ($updateCheck == "fileError") {
+                        echo "<div class=\"alert alert-danger\">An error has occurred</div>";
+                    } elseif ($updateCheck == "maxFileSizeReached") {
+                        echo "<div class=\"alert alert-danger\">Max file size reached</div>";
+                    } elseif ($updateCheck == "success") {
                         echo "<div class=\"alert alert-success\">Record was updated</div>";
                     }
                 }
@@ -41,13 +47,11 @@
                         <tr>
                             <td>Image</td>
                             <td class="w-100">
-                                <div class="form-group">
+                                <div class="form-group mb-0">
                                     <label for="input-file">Enter a file:</label>
                                     <input id="input-file" class="form-control-file" type="file" name="file">
-                                    <div id="image-preview" class="image-preview mt-3 d-flex justify-content-center align-items-center">
-                                        <img id="image-preview-image" class="image-preview-image" src="" alt="Image Preview">
-                                        <span id="image-preview-text" class="image-preview-text">Image Preview</span>
-                                    </div>
+                                    <img id="image-preview-image" class="mt-3" src="uploads/images/<?=$articlesView->readArticleView($id)[0]["fileArticles"]?>" alt="Article Image">
+                                    <span id="image-preview-text"></span>
                                 </div>
                             </td>
                         </tr>
