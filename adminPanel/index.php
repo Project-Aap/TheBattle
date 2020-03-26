@@ -19,7 +19,7 @@
         <input type="submit" style="visibility: hidden;" name="submitLogin" value="Login">
     </form>
     <p>Please note that if you are a visitor and not a moderator you should go back to the homepage</p>
-    <a href="https://www.debattle.rf.gd" class="btn btn-primary">Bring me back!</a>
+    <a href="http://www.debattle.rf.gd" class="btn btn-primary">Bring me back!</a>
     </div>
 
     <?php
