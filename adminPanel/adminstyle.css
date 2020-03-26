@@ -1,0 +1,27 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+    background: mediumblue;
+}
+html{
+    background-color: lightskyblue;
+}
+.content-width{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+body h2, body p{
+    text-align: left;
+    color: mediumblue;
+}
+.wrapper{
+    background-color: lightskyblue;
+}
+.align{
+    float: left;
+    width: 30%;
+}
+a{
+    margin-top: 200px;
+}
