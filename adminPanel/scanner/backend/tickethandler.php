@@ -1,7 +1,7 @@
 <?php
 
 $dbHost = 'sql213.epizy.com';
-$dbName = 'epiz_25235384_information';
+$dbName = 'epiz_25235384_debattleDB';
 $dbUser = 'epiz_25235384';
 $dbPass = 'EuJCv1EE366U0X';
 
