@@ -5,20 +5,26 @@ const imagePreviewText = document.getElementById("image-preview-text");
 
 inputFile.addEventListener("change", function() {
     const file = this.files[0];
-    const extension = file.name.split(".")[1];
-    const allowed = ["jpg", "jpeg", "png"];
 
-    if (allowed.includes(extension)) {
-        const reader = new FileReader();
-
-        imagePreviewText.style.display = "none";
-        imagePreviewImage.style.display = "block";
+    if (file) {
+        const extension = file.name.split(".")[1];
+        const allowed = ["jpg", "jpeg", "png"];
     
-        reader.addEventListener("load", function() {
-            imagePreviewImage.setAttribute("src", this.result);
-        })
+        if (allowed.includes(extension)) {
+            const reader = new FileReader();
     
-        reader.readAsDataURL(file);
+            imagePreviewText.style.display = "none";
+            imagePreviewImage.style.display = "block";
+        
+            reader.addEventListener("load", function() {
+                imagePreviewImage.setAttribute("src", this.result);
+            })
+        
+            reader.readAsDataURL(file);
+        } else {
+            imagePreviewText.style.display = null;
+            imagePreviewImage.style.display = null;
+        }
     } else {
         imagePreviewText.style.display = null;
         imagePreviewImage.style.display = null;
